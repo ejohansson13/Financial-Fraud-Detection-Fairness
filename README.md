@@ -1,1 +1,1 @@
-# Financial-Fraud-Detection-Fairness
+# Financial Fraud Detection Fairness
