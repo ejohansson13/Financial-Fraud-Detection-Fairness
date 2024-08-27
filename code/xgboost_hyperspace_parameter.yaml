@@ -1,0 +1,26 @@
+XGBoost:
+    classpath: xgboost.XGBClassifier
+    kwargs:
+        n_estimators:
+            type: int
+            range: [ 10, 100 ]
+        
+        max_depth:
+            type: int
+            range: [ 3, 30 ]
+        
+        learning_rate:
+            type: float
+            range: [ 0.05, 0.2 ]
+
+        gamma:
+            type: float
+            range: [0,3]
+
+        tree_method:
+            - "approx"
+            - "hist"
+
+        min_child_weight:
+            type: int
+            range: [ 1, 2 ]

@@ -1,0 +1,19 @@
+RandomForest:
+    classpath: sklearn.ensemble.RandomForestClassifier
+    kwargs:
+        n_estimators:
+            type: int
+            range: [ 20, 100 ]
+        
+        max_depth:
+            type: int
+            range: [ 3, 30 ]
+        
+        criterion:
+            - "gini"
+            - "entropy"
+            - "log_loss"
+
+        max_features:
+            - "sqrt"
+            - "log2"
